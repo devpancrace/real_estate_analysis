@@ -1,0 +1,9 @@
+.venv
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+
+# Fichiers de configuration IDE
+.vscode/
+.idea/
+*.swp

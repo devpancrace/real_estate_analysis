@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.8.0  # Version récente de Black (mise à jour depuis 21.12b0)
+    hooks:
+      - id: black
+        args: [--line-length=100]  # Explicitement définir la longueur de ligne à 88
+
+  - repo: https://github.com/PyCQA/pycodestyle
+    rev: 2.12.1  # Version récente de pycodestyle
+    hooks:
+      - id: pycodestyle
+        args: [--max-line-length=100]  # Harmoniser avec Black
